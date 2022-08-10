@@ -458,6 +458,7 @@
     flex-direction: row;
     justify-content: start;
     margin-left: 5px;
+    animation:none
 }
 
 .section1{
@@ -468,25 +469,28 @@
     background-color: darksalmon;
     border: solid 3px black;
     width: 500px;
+    margin-left: 5px;
   
 }
 
-.div1{
+.div1S{
    
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 250px;
 }
-.div2{
+.div2S{
    
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 250px;
 }
 
 .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 800px;
+    justify-content: center;
+    width: 600px;
     margin-top: 40px;
 }
 
@@ -547,4 +551,91 @@
 .footerTrabajos{
     margin-left: 20px;
 }
+}
+
+@media screen and (max-width:550px) {
+    .gridContainer{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section1"
+        "section2"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-areas: 1fr;
+
+    }
+
+    .estiloLista{
+        width: 150px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    
+    .section1{
+        width: 340px;
+    }
+
+    .imagenIncio{
+        width: 360px;
+    }
+
+    .footer{
+        width: 380px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sectionServicios1{
+        width: 260px;
+        border:none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+
+    .sectionServicios2{
+        width: 350px;
+    }
+
+    .div1S{
+        margin-top:30px;
+        border: double 4px black;
+        height: 400px;
+    }
+
+    .div2S{
+        margin-top: 30px;
+        border: double 4px black;
+        height: 400px;
+    }
+
+    .footerServicios{
+        width: 380px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .sectionTrabajos{
+        width: 200px;
+        padding: 10px;
+        border: none;
+    }
+
+    .footerTrabajos{
+        width: 380px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .footerContacto{
+        width: 380px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        height: 50px;
+    }
 }
