@@ -1,456 +1,405 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-.imagenLogo{
-    width: 250px;
-    height: 150px;
-    border: solid 3px black;
-    margin-left: 30px;
-    margin-top: 5px;
-}
-.imagenLogo:hover{
+.header {
+  grid-area: header; }
+
+.nav {
+  grid-area: nav; }
+
+.section1 {
+  grid-area: section1; }
+
+.section2 {
+  grid-area: section2; }
+
+.footer {
+  grid-area: footer; }
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header nav nav nav" "section1 section2 section2 section2" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1r 1fr;
+  grid-gap: 10px;
+  background-color: darksalmon; }
+
+.imagenLogo {
+  width: 250px;
+  height: 150px;
+  border: solid 3px black;
+  margin-left: 30px;
+  margin-top: 5px; }
+  .imagenLogo:hover {
     width: 300px;
     height: 200px;
     border: solid 4px black;
-    transition: all 2s linear;
-}
-.header{
-    grid-area: header;
-}
-.nav{
-    grid-area: nav;
-}
-.section1{
-    grid-area: section1;
-}
-.section2{
-    grid-area: section2;
-}
-.footer{
-    grid-area: footer;
-}
-
-.gridContainer{
-    display: grid;
-    grid-template-areas: 
-    "header nav nav nav"
-    "section1 section2 section2 section2"
-    "footer footer footer footer";
-
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1r 1fr ;
-
-    grid-gap: 10px;
-    background-color: darksalmon;
-}
+    transition: all 2s linear; }
 
 .estiloLista {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    margin-top: 10px;
-    height: 50px;
-}
-
-.inicio{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-top: 10px;
+  height: 50px; }
+  .estiloLista .inicio {
     flex-direction: row;
-    border: outset 2px black;
-    background-color: darksalmon;
-    width: 120px;
-    
-}
-.inicio:hover{
-    border: outset 4px black;
-    background-color: darkgray ;
-    transition: all 1s;
-}
-.servicios{
-    flex-direction: row;
-    border: outset 2px black;
-    background-color: darksalmon;
-    width: 120px;
-}
-.servicios:hover{
-    border: outset 4px black;
-    background-color:darkgray;
-    transition: all 1s;
-}
-.trabajos{
-    flex-direction: row;
-    border: outset 2px black;
-    background-color: darksalmon;
-    width: 120px;
-}
-.trabajos:hover{
-    border: outset 4px black;
-    background-color:darkgray;
-    transition: all 1s;
-}
-.contacto{
-    flex-direction: row;
-    border: outset 2px black;
-    background-color: darksalmon;
-    width: 120px;
-}
-.contacto:hover{
-    border: outset 4px black;
-    background-color:darkgray;
-    transition: all 1s;
-}
-.imagenIncio{
     border: solid 3px black;
-    padding: 3px;
-    margin-left: 280px;
-    margin-top: 50px;
-    animation-name: efecto;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    background-color: darksalmon;
+    width: 120px; }
+    .estiloLista .inicio:hover {
+      border: outset 4px black;
+      background-color: darkgray;
+      transition: all 1s; }
+  .estiloLista .servicios {
+    flex-direction: row;
+    border: solid 3px black;
+    background-color: darksalmon;
+    width: 120px; }
+    .estiloLista .servicios:hover {
+      border: outset 4px black;
+      background-color: darkgray;
+      transition: all 1s; }
+  .estiloLista .trabajos {
+    flex-direction: row;
+    border: solid 3px black;
+    background-color: darksalmon;
+    width: 120px; }
+    .estiloLista .trabajos:hover {
+      border: outset 4px black;
+      background-color: darkgray;
+      transition: all 1s; }
+  .estiloLista .contacto {
+    flex-direction: row;
+    border: solid 3px black;
+    background-color: darksalmon;
+    width: 120px; }
+    .estiloLista .contacto:hover {
+      border: outset 4px black;
+      background-color: darkgray;
+      transition: all 1s; }
 
-}
+.imagenIncio {
+  border: solid 3px black;
+  padding: 3px;
+  margin-left: 280px;
+  margin-top: 50px;
+  animation-name: efecto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
 @keyframes efecto {
-    0% {width: 470px; height: 380px; padding: 3px; background-color: rgb(247, 225, 225);}
-    33% {width: 500px; height: 410px; padding: 6px; background-color:rgb(247, 205, 203); }
-    66% {width: 530px; height: 440px; padding: 9px;background-color: rgb(255, 183, 149);}
-    99% {width: 560px; height: 470px; padding: 12px;background-color: darksalmon; }
-}
-.section1{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    line-height: 1.6;
-    background-image: linear-gradient(darksalmon , rgb(255, 255, 255));
-    border: solid 3px black;
-    margin-left: 30px;
-    margin-top: 50px;
-    
-}
+  0% {
+    width: 470px;
+    height: 380px;
+    padding: 3px;
+    background-color: #f7e1e1; }
+  33% {
+    width: 500px;
+    height: 410px;
+    padding: 6px;
+    background-color: #f7cdcb; }
+  66% {
+    width: 530px;
+    height: 440px;
+    padding: 9px;
+    background-color: #ffb795; }
+  99% {
+    width: 560px;
+    height: 470px;
+    padding: 12px;
+    background-color: darksalmon; } }
 
-.div1{
+.section1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  background-image: linear-gradient(darksalmon, white);
+  border: solid 3px black;
+  margin-left: 30px;
+  margin-top: 50px; }
+  .section1 .div1 {
     margin-left: 5px;
     margin-top: 40px;
-    margin-bottom: 40px;
-}
-.div2{
+    margin-bottom: 40px; }
+  .section1 .div2 {
     margin-left: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px; }
 
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    margin-top: 80px;
-    margin-left: 30px;
-    height: 30px;
-}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  margin-top: 30px; }
 
-.headerContacto{
-    grid-area: headerCon;
-}
-.navContacto{
-    grid-area: navCon;
-}
-.sectionContacto1{
-    grid-area: sectionCon1;
-}
-.sectionContacto2{
-    grid-area: sectionCon2;
-}
-.sectionContacto3{
-    grid-area: sectionCon3;
-}
-.footerContacto{
-    grid-area: footerCon;
-}
+.headerContacto {
+  grid-area: headerCon; }
 
-.gridContacto{
-    display: grid;
-    grid-template-areas:
-    "headerCon navCon navCon "
-    " . sectionCon1 sectionCon1"
-    " . sectionCon2 sectionCon2"
-    " . sectionCon3 sectionCon3"
-    "footerCon footerCon footerCon";
+.navContacto {
+  grid-area: navCon; }
 
-    grid-template-columns: 0,5fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
-    grid-gap: 10px;
-    background-color: darksalmon;
-    
-}
+.sectionContacto1 {
+  grid-area: sectionCon1; }
 
-.sectionContacto1{
-    display: flex;
-    flex-direction: row;
-    border: solid 3px black;
-    width: 85%;
-    justify-content: center;
-    background-image: linear-gradient(to right, darksalmon , white)
-}
-.sectionContacto2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: solid 3px black;
-    width: 85%;
-    height: 300px;
-    background-image: linear-gradient(to right, darksalmon , white)
-}
-.sectionContacto3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 85%;
-    margin-top: 80px;
-    transform: scale(1.5,1.5);
-}
-.footerContacto{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    height: 30px;
-    
-}
-.formulario{
-    margin-top: 30px;
-}
-.somos{
-    font-size: 50px;
-    margin-top: 10px;
-    margin-left: 15px;
-    
-}
-.parrafoSomos{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1,6;
-    margin-top: 15px;
-    margin-left: 10px;
-}
+.sectionContacto2 {
+  grid-area: sectionCon2; }
 
-.headerServicios{
-    grid-area: headerSer;
-}
-.navServicios{
-    grid-area: navSer;
-}
-.sectionServicios1{
-    grid-area: sectionSer1;
-}
-.sectionServicios2{
-    grid-area: sectionSer2;
-}
-.footerServicios{
-    grid-area: footerSer;
-}
+.sectionContacto3 {
+  grid-area: sectionCon3; }
 
-.gridServicios{
-    display: grid;
-    grid-template-areas: 
-    "headerSer navSer navSer navSer"
-    "sectionSer1 sectionSer1 sectionSer2 sectionSer2"
-    "footerSer footerSer footerSer footerSer";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-gap: 10px;
-    background-color: darksalmon;
-}
+.footerContacto {
+  grid-area: footerCon; }
 
-.sectionServicios1{
-    display: flex;
-    justify-content: center;
-    border: solid 2px black;
-    background-image: linear-gradient(to left, darksalmon , rgb(231, 193, 182))
-}
+.gridContacto {
+  display: grid;
+  grid-template-areas: "headerCon navCon navCon " " . sectionCon1 sectionCon1" " . sectionCon2 sectionCon2" " . sectionCon3 sectionCon3" "footerCon footerCon footerCon";
+  grid-template-columns: 0,5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
+  grid-gap: 10px;
+  background-color: darksalmon; }
 
-.sectionServicios2{
-    display: flex;
-    justify-content: center;
-    border: solid 2px black;
-    background-image: linear-gradient(to right, darksalmon , rgb(231, 193, 182))
-}
-.div1S{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 90px;
-    border: double 8px black;
-    height: 180px;
-    padding: 5px;
-}
+.sectionContacto1 {
+  display: flex;
+  flex-direction: row;
+  border: solid 3px black;
+  width: 85%;
+  justify-content: center;
+  background-image: linear-gradient(to right, darksalmon, white); }
 
-.div2S{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 300px;
-    margin-right: 100px;
-    border: double 8px black;
-    height: 190px;
-    padding: 5px;
-}
-.footerServicios{
-   margin-left: 600px;
-   margin-top: 100px;
-}
+.sectionContacto2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 3px black;
+  width: 85%;
+  height: 300px;
+  background-image: linear-gradient(to right, darksalmon, white); }
 
-.headerTrabajos{
-    grid-area: headerTra;
-}
-.navTrabajos{
-    grid-area: navTra;
-}
-.sectionTrabajos{
-    grid-area: sectionTra;
-}
-.footerTrabajos{
-    grid-area: footerTra;
-}
+.sectionContacto3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85%;
+  margin-top: 80px;
+  transform: scale(1.5, 1.5); }
 
-.gridTrabajos{
-    display: grid;
-    grid-template-areas: 
-    "headerTra navTra navTra"
-    "sectionTra sectionTra sectionTra"
-    "footerTra footerTra footerTra";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1 fr 3fr 1fr;
-    grid-gap: 10px;
-    background-color: darksalmon;
-}
-.sectionTrabajos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border: solid 2px black;
-    margin-left: 30px;
-    margin-right: 30px;
+.footerContacto {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  height: 30px; }
 
-}
-.imagen1{
-    border: solid 3px black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    height: 500px;
-}
-.imagen1:hover{
-    border: solid 4px black;
-    height: 800px;
-    background-color: black;
-    transition: all 3s;
-}
-.imagen2{
-    border: solid 3px black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    height: 500px;
-}
-.imagen2:hover{
-    border: solid 4px black;
-    height: 800px;
-    background-color: black;
-    transition: all 3s;
-}
-.imagen3{
-    border: solid 3px black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    height: 500px;
-}
-.imagen3:hover{
-    border: solid 4px black;
-    height: 800px;
-    background-color: black;
-    transition: all 3s;
-}
-.imagen4{
-    border: solid 3px black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    height: 500px;
-}
-.imagen4:hover{
-    border: solid 4px black;
-    height: 800px;
-    background-color: black;
-    transition: all 3s;
-}
-.imagen5{
-    border: solid 3px black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    height: 500px;
-}
-.imagen5:hover{
-    border: solid 4px black;
-    height: 800px;
-    background-color: black;
-    transition: all 3s;
-}
-.footerTrabajos{
-    margin-top: 20px;
-    margin-left: 600px;
-}
+.formulario {
+  margin-top: 30px; }
+
+.somos {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 15px; }
+
+.parrafoSomos {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1,6;
+  margin-top: 15px;
+  margin-left: 10px; }
+
+.headerServicios {
+  grid-area: headerSer; }
+
+.navServicios {
+  grid-area: navSer; }
+
+.sectionServicios1 {
+  grid-area: sectionSer1; }
+
+.sectionServicios2 {
+  grid-area: sectionSer2; }
+
+.footerServicios {
+  grid-area: footerSer; }
+
+.gridServicios {
+  display: grid;
+  grid-template-areas: "headerSer navSer navSer navSer" "sectionSer1 sectionSer1 sectionSer2 sectionSer2" "footerSer footerSer footerSer footerSer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-gap: 10px;
+  background-color: darksalmon; }
+
+.sectionServicios1 {
+  display: flex;
+  justify-content: center;
+  border: solid 2px black;
+  background-image: linear-gradient(to left, darksalmon, #e7c1b6); }
+
+.sectionServicios2 {
+  display: flex;
+  justify-content: center;
+  border: solid 2px black;
+  background-image: linear-gradient(to right, darksalmon, #e7c1b6); }
+
+.div1S {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 90px;
+  border: double 8px black;
+  height: 180px;
+  padding: 5px; }
+
+.div2S {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 300px;
+  margin-right: 100px;
+  border: double 8px black;
+  height: 190px;
+  padding: 5px; }
+
+.footerServicios {
+  margin-left: 600px;
+  margin-top: 100px; }
+
+.headerTrabajos {
+  grid-area: headerTra; }
+
+.navTrabajos {
+  grid-area: navTra; }
+
+.sectionTrabajos {
+  grid-area: sectionTra; }
+
+.footerTrabajos {
+  grid-area: footerTra; }
+
+.gridTrabajos {
+  display: grid;
+  grid-template-areas: "headerTra navTra navTra" "sectionTra sectionTra sectionTra" "footerTra footerTra footerTra";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1 fr 3fr 1fr;
+  grid-gap: 10px;
+  background-color: darksalmon; }
+
+.sectionTrabajos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid 2px black;
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.imagen1 {
+  border: solid 3px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 500px; }
+
+.imagen1:hover {
+  border: solid 4px black;
+  height: 800px;
+  background-color: black;
+  transition: all 3s; }
+
+.imagen2 {
+  border: solid 3px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 500px; }
+
+.imagen2:hover {
+  border: solid 4px black;
+  height: 800px;
+  background-color: black;
+  transition: all 3s; }
+
+.imagen3 {
+  border: solid 3px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 500px; }
+
+.imagen3:hover {
+  border: solid 4px black;
+  height: 800px;
+  background-color: black;
+  transition: all 3s; }
+
+.imagen4 {
+  border: solid 3px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 500px; }
+
+.imagen4:hover {
+  border: solid 4px black;
+  height: 800px;
+  background-color: black;
+  transition: all 3s; }
+
+.imagen5 {
+  border: solid 3px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 500px; }
+
+.imagen5:hover {
+  border: solid 4px black;
+  height: 800px;
+  background-color: black;
+  transition: all 3s; }
+
+.footerTrabajos {
+  margin-top: 20px;
+  margin-left: 600px; }
+
 @media screen and (max-width: 768px) {
-    .gridContainer{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "section1"
-        "section2"
-        "footer";
-        grid-template-columns: 1fr;
-        grid-template-areas: 1fr;
-
-    }
-
-    
-.estiloLista {
+  .gridContainer {
+    display: grid;
+    grid-template-areas: "header" "nav" "section1" "section2" "footer";
+    grid-template-columns: 1fr;
+    grid-template-areas: 1fr; }
+  .estiloLista {
     display: flex;
     list-style-type: none;
     justify-content: start;
     margin-top: 10px;
-    margin-left: 5px;
-}
-
-.inicio{
+    margin-left: 5px; }
+  .inicio {
     flex-direction: row;
     border: outset 2px black;
     background-color: darksalmon;
-    width: 100px;
-}
-.servicios{
+    width: 100px; }
+  .servicios {
     flex-direction: row;
     border: outset 2px black;
     background-color: darksalmon;
-    width: 100px;
-}
-.trabajos{
+    width: 100px; }
+  .trabajos {
     flex-direction: row;
     border: outset 2px black;
     background-color: darksalmon;
-    width: 100px;
-}
-.contacto{
+    width: 100px; }
+  .contacto {
     flex-direction: row;
     border: outset 2px black;
     background-color: darksalmon;
-    width: 100px;
-}
-
-.imagenIncio{
+    width: 100px; }
+  .imagenIncio {
     border: solid 2px black;
     padding: 2px;
     margin-top: 15px;
@@ -458,10 +407,8 @@
     flex-direction: row;
     justify-content: start;
     margin-left: 5px;
-    animation:none
-}
-
-.section1{
+    animation: none; }
+  .section1 {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: start;
@@ -469,173 +416,99 @@
     background-color: darksalmon;
     border: solid 3px black;
     width: 500px;
-    margin-left: 5px;
-  
-}
-
-.div1S{
-   
+    margin-left: 5px; }
+  .div1S {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 250px;
-}
-.div2S{
-   
+    height: 250px; }
+  .div2S {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 250px;
-}
-
-.footer{
+    height: 250px; }
+  .footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 600px;
-    margin-top: 40px;
-}
-
-
-.gridContacto{
+    margin-top: 40px; }
+  .gridContacto {
     display: grid;
-    grid-template-areas: 
-    "headerCon"
-    "navCon"
-    "sectionCon1"
-    "sectionCon2"
-    "sectionCon3"
-    "footerCon";
-
+    grid-template-areas: "headerCon" "navCon" "sectionCon1" "sectionCon2" "sectionCon3" "footerCon";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 5px;
-    
-}
-
-.footerContacto{
+    grid-gap: 5px; }
+  .footerContacto {
     display: flex;
-    justify-content: start;
-}
-
-.gridServicios{
+    justify-content: start; }
+  .gridServicios {
     display: grid;
-    grid-template-areas: 
-    "headerSer"
-    "navSer"
-    "sectionSer1"
-    "sectionSer2"
-    "footerSer";
+    grid-template-areas: "headerSer" "navSer" "sectionSer1" "sectionSer2" "footerSer";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.sectionServicios2{
-    width: 600px;
-}
-.sectionServicios1{
-    width: 600px;
-}
-.footerServicios{
-    margin-left: 20px;
-}
-.gridTrabajos{
+    grid-template-rows: 1fr; }
+  .sectionServicios2 {
+    width: 600px; }
+  .sectionServicios1 {
+    width: 600px; }
+  .footerServicios {
+    margin-left: 20px; }
+  .gridTrabajos {
     display: grid;
-    grid-template-areas: 
-    "headerTra"
-    "navTra"
-    "sectionTra"
-    "footerTra";
+    grid-template-areas: "headerTra" "navTra" "sectionTra" "footerTra";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    
-}
-.footerTrabajos{
-    margin-left: 20px;
-}
-}
+    grid-template-rows: 1fr; }
+  .footerTrabajos {
+    margin-left: 20px; } }
 
-@media screen and (max-width:550px) {
-    .gridContainer{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "section1"
-        "section2"
-        "footer";
-        grid-template-columns: 1fr;
-        grid-template-areas: 1fr;
-
-    }
-
-    .estiloLista{
-        width: 150px;
-        height: 30px;
-        margin-left: 20px;
-    }
-    
-    .section1{
-        width: 340px;
-    }
-
-    .imagenIncio{
-        width: 360px;
-    }
-
-    .footer{
-        width: 380px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .sectionServicios1{
-        width: 260px;
-        border:none;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        
-    }
-
-    .sectionServicios2{
-        width: 350px;
-    }
-
-    .div1S{
-        margin-top:30px;
-        border: double 4px black;
-        height: 400px;
-    }
-
-    .div2S{
-        margin-top: 30px;
-        border: double 4px black;
-        height: 400px;
-    }
-
-    .footerServicios{
-        width: 380px;
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-    }
-
-    .sectionTrabajos{
-        width: 200px;
-        padding: 10px;
-        border: none;
-    }
-
-    .footerTrabajos{
-        width: 380px;
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-    }
-
-    .footerContacto{
-        width: 380px;
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        height: 50px;
-    }
-}
+@media screen and (max-width: 550px) {
+  .gridContainer {
+    display: grid;
+    grid-template-areas: "header" "nav" "section1" "section2" "footer";
+    grid-template-columns: 1fr;
+    grid-template-areas: 1fr; }
+  .estiloLista {
+    width: 150px;
+    height: 30px;
+    margin-left: 20px; }
+  .section1 {
+    width: 340px; }
+  .imagenIncio {
+    width: 360px; }
+  .footer {
+    width: 380px;
+    display: flex;
+    justify-content: center; }
+  .sectionServicios1 {
+    width: 260px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .sectionServicios2 {
+    width: 350px; }
+  .div1S {
+    margin-top: 30px;
+    border: double 4px black;
+    height: 400px; }
+  .div2S {
+    margin-top: 30px;
+    border: double 4px black;
+    height: 400px; }
+  .footerServicios {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; }
+  .sectionTrabajos {
+    width: 200px;
+    padding: 10px;
+    border: none; }
+  .footerTrabajos {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; }
+  .footerContacto {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    height: 50px; } }
